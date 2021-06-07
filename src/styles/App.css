@@ -1,0 +1,379 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Universal Selector */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Element Selectors*/
+
+body {
+  background-color: #778585;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+  
+}
+
+/* main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+/* Style for header */
+
+header {
+
+  padding: 0px 30px 0px 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(41, 31, 58);
+  color: rgb(31, 167, 160);
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 48px;
+  background-color: rgb(31, 167, 160);
+  color: rgb(41, 31, 58);
+  padding-left: 100px;
+  padding-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Beginning of style for the navigation bar */
+
+nav {
+  display: flex;
+  padding-top: 40px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  align-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  ;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+  border-bottom: rgb(31, 167, 160);
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  color: rgb(31, 167, 160);
+}
+
+nav a {
+  
+  text-decoration: none;
+  color: rgb(31, 167, 160);
+  transition: all 0.25s ease-in;
+  
+}
+
+/* Hover effects on Nav */
+#rele:hover {
+  background-color: rgb(31, 167, 160);
+  color: rgb(41, 31, 58);
+  opacity: 0.7;
+}
+
+#proj:hover {
+  background-color: rgb(31, 167, 160);
+  color: rgb(41, 31, 58);
+  opacity: 0.7;
+}
+
+#cont:hover {
+  background-color: rgb(31, 167, 160);
+  color: rgb(41, 31, 58);
+  opacity: 0.7;
+}
+
+/* Style for background image below header. */
+.hero {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url(../website-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/* Section styling for text on side */
+
+
+.block {  
+  display: flex;
+  font-size: 175%;
+  color: rgb(32, 51, 65);
+ justify-content: space-between;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-items: stretch;
+ margin-top: 25px;
+ margin-bottom: 25px;
+
+}
+
+.block div {
+  flex: 0 0 77%;
+}
+
+.block h1{
+  font-size: 42px;
+  padding: 10px;
+  text-align: right;
+  border-right-style: solid;
+  border-right-color: rgb(224, 85, 4);
+  border-width: 3px;
+  margin: 0px;
+  flex: 0 0 20%;
+  
+}
+
+/* Container for each of the project images */
+
+.workcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 10px;
+  
+}
+
+/* defines the size of the box for the images */
+.projectbox{
+  position: relative;
+  border-style: solid;
+  border-width: 3px;
+  flex: 0 0 100%;
+  border-color: rgb(224, 85, 4);
+  width: 20%;
+  height: 200px;
+  transition: 1s;
+
+}
+
+/* add the correct size styling to the respective image boxes */
+
+#largeimage {
+  margin-left: 10px;
+  height: 700px;   
+  flex: 0 0 98.5%;
+  transition: 1s;
+  
+}
+
+#smallimage {
+  flex: 0 0 49%;
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: 1s;
+  
+}
+
+/* Styling for project 1 & hover effect */
+
+.project1 {
+
+  background-image: url(../RecipePlanner.jfif); 
+  background-size: cover; 
+  background-position: center; 
+  height: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+.project1:hover {
+  filter: grayscale(0%);
+
+}
+
+/* Styling for project 2 & hover effect */
+
+.project2 {
+
+  background-image: url(../cryptoApp.png); 
+  background-size: cover; 
+  background-position: center; 
+  height: 100%;
+   width: 100%;
+   filter: grayscale(100%);
+   transition: 1s;
+  
+}
+
+.project2:hover {
+  filter: grayscale(0%);
+}
+
+/* Styling for project 3 & hover effect */
+
+.project3 {
+
+  background-image: url(../markdown.png); 
+  background-size: cover; 
+  background-position: center; 
+  height: 100%;
+   width: 100%;
+   filter: grayscale(100%);
+   transition: all 0.50s;
+}
+
+.project3:hover {
+  filter: grayscale(0%);
+}
+
+/* Styling for project 4 & hover effect */
+
+.project4 {
+
+  background-image: url(../passgen.png); 
+  background-size: cover; 
+  background-position: center; 
+  height: 100%;
+   width: 100%;
+   filter: grayscale(100%);
+   transition: all 0.50s;
+}
+
+.project4:hover {
+  filter: grayscale(0%);
+}
+
+/* Styling for project 5 & hover effect */
+
+.project5 {
+
+  background-image: url(../weatherdash.png); 
+  background-size: cover; 
+  background-position: center; 
+  height: 100%;
+   width: 100%;
+   filter: grayscale(100%);
+   transition: all 0.50s;
+   background-size: cover; 
+   background-position: center;
+   
+}
+
+.project5:hover {
+  filter: grayscale(0%);
+}
+
+/* style for paragraph boxes within project boxes */
+
+.info1 {
+
+  position: absolute;
+  display: inline-block;
+  font-size: 20pt;
+  color: rgb(41, 31, 58);
+  filter: grayscale(0%);
+  top: 620px;
+  background-color: rgb(224, 85, 4);
+  padding: 10px;
+}
+
+.info {
+  position: absolute;
+  display: inline-block;
+  font-size: 20pt;
+  font-weight: bolder;
+  color: rgb(41, 31, 58);
+  filter: grayscale(0%);
+  top: 120px;
+  background-color: rgb(224, 85, 4);
+  padding: 10px;
+}
+
+/* Contact information section */
+
+.cont {
+  
+  padding-top: 40px; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 32pt;
+  align-content: center;
+  
+}
+
+.cont ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cont ul li {
+  
+  margin-left: 50px;
+  border-bottom: rgb(32, 51, 65);
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  
+}
+
+.cont a {
+  
+  text-decoration: none;
+  color: rgb(32, 51, 65);
+  transition: all 0.25s ease-in;
+  
+}
+
+/* Media Query Section */
+
+
